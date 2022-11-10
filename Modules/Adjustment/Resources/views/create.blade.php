@@ -47,7 +47,7 @@
                                 <textarea name="note" id="note" rows="5" class="form-control"></textarea>
                             </div>
                             <div class="mt-3">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">
                                     Create Adjustment <i class="bi bi-check"></i>
                                 </button>
                             </div>

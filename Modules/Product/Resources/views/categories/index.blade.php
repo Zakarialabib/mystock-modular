@@ -2,15 +2,11 @@
 
 @section('title', 'Product Categories')
 
-@section('third_party_stylesheets')
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
-@endsection
-
 @section('breadcrumb')
     <ol class="breadcrumb border-0 m-0">
-        <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('products.index') }}">Products</a></li>
-        <li class="breadcrumb-item active">Categories</li>
+        <li class="breadcrumb-item"><a href="{{ route('home') }}">{{__('Home')}}</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('products.index') }}">{{__('Products')}}</a></li>
+        <li class="breadcrumb-item active">{{__('Categories')}}</li>
     </ol>
 @endsection
 
@@ -22,15 +18,14 @@
                 <div class="card">
                     <div class="card-body">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#categoryCreateModal">
-                            Add Category <i class="bi bi-plus"></i>
+                        <button type="button" class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded" data-toggle="modal" data-target="#categoryCreateModal">
+                            {{__('Add Category')}} <i class="bi bi-plus"></i>
                         </button>
 
                         <hr>
 
-                        <div class="table-responsive">
-                            {!! $dataTable->table() !!}
-                        </div>
+                        <livewire:product::products.category-page />
+
                     </div>
                 </div>
             </div>
@@ -60,7 +55,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Create <i class="bi bi-check"></i></button>
+                        <button type="submit" class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">Create <i class="bi bi-check"></i></button>
                     </div>
                 </form>
             </div>
@@ -68,6 +63,3 @@
     </div>
 @endsection
 
-@push('page_scripts')
-    {!! $dataTable->scripts() !!}
-@endpush

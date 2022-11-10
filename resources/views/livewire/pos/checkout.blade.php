@@ -17,7 +17,7 @@
                     <label for="customer_id">Customer <span class="text-danger">*</span></label>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <a href="{{ route('customers.create') }}" class="btn btn-primary">
+                            <a href="{{ route('customers.create') }}" class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">
                                 <i class="bi bi-person-plus"></i>
                             </a>
                         </div>
@@ -35,8 +35,8 @@
                         <thead>
                         <tr class="text-center">
                             <th class="align-middle">Product</th>
-                            <th class="align-middle">Price</th>
-                            <th class="align-middle">Quantity</th>
+                            <th class="align-middle">{{__('Price')}}</th>
+                            <th class="align-middle">{{__('Quantity')}}</th>
                             <th class="align-middle">Action</th>
                         </tr>
                         </thead>

@@ -29,7 +29,7 @@
         <div class="p-3">
             <div class="d-flex align-items-end">
                 <textarea class="form-control me-2" name="message" id="message" placeholder="Type a message" rows="1" style="height: 40px;" autofocus required></textarea>
-                <button type="button" class="btn btn-primary mt-0 send-message" style="width: 100px;">Send</button>
+                <button type="button" class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded mt-0 send-message" style="width: 100px;">Send</button>
             </div>
         </div>
     </div>

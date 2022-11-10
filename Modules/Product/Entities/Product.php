@@ -14,7 +14,8 @@ use App\Support\Helper;
 class Product extends Model implements HasMedia
 {
     use HasAdvancedFilter;
-
+    use HasFactory, InteractsWithMedia;
+    
     public $orderable = [
         'id','product_name','product_code','product_quantity',
         'product_cost','product_price','product_stock_alert',
@@ -28,10 +29,7 @@ class Product extends Model implements HasMedia
     ];
 
     // Add those columns to table : tinyint-> "website_featured","catalogue_featured"
-
-
-    use HasFactory, InteractsWithMedia;
-
+    
     protected $guarded = [];
 
     protected $with = ['media'];

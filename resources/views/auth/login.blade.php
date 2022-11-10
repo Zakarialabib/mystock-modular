@@ -64,7 +64,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-4">
-                                    <button class="btn btn-primary px-4" type="submit">Login</button>
+                                    <button class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded px-4" type="submit">Login</button>
                                 </div>
                                 <div class="col-8 text-right">
                                     <a class="btn btn-link px-0" href="{{ route('password.request') }}">

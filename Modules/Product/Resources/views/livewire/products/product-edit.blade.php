@@ -2,7 +2,7 @@
 
     <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title">Update Product : {{ $product->product_name }}</h5>
+            <h5 class="modal-title">{{__('Update Product')}} : {{ $product->product_name }}</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -15,7 +15,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="form-row">
-                                    <div class="col-md-12">
+                                    <div class="lg:w-1/2 sm:w-1/2 px-2">
                                         <div class="form-group">
                                             <label for="product_name" autofocus>{{ __('Product Name') }} <span
                                                     class="text-danger">*</span></label>
@@ -23,7 +23,7 @@
                                                 value="{{ $product->product_name }}">
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="lg:w-1/2 sm:w-1/2 px-2">
                                         <div class="form-group">
                                             <label for="product_code">{{ __('Code') }} <span
                                                     class="text-danger">*</span></label>
@@ -51,7 +51,7 @@
 
 
                                     <div class="form-row">
-                                        <div class="col-md-6">
+                                        <div class="lg:w-1/2 sm:w-1/2 px-2">
                                             <div class="form-group">
                                                 <label for="product_cost">{{ __('Cost') }} <span
                                                         class="text-danger">*</span></label>
@@ -60,7 +60,7 @@
                                                     value="{{ $product->product_cost }}">
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="lg:w-1/2 sm:w-1/2 px-2">
                                             <div class="form-group">
                                                 <label for="product_price">{{ __('Price') }} <span
                                                         class="text-danger">*</span></label>
@@ -72,7 +72,7 @@
                                     </div>
 
                                     <div class="form-row">
-                                        <div class="col-md-6">
+                                        <div class="lg:w-1/2 sm:w-1/2 px-2">
                                             <div class="form-group">
                                                 <label for="product_quantity">{{ __('Quantity') }} <span
                                                         class="text-danger">*</span></label>
@@ -80,7 +80,7 @@
                                                     required value="{{ $product->product_quantity }}" min="1">
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="lg:w-1/2 sm:w-1/2 px-2">
                                             <div class="form-group">
                                                 <label for="product_stock_alert">{{ __('Alert Quantity') }} <span
                                                         class="text-danger">*</span></label>
@@ -109,7 +109,7 @@
                                                     <div class="form-row">
                                                         <div class="col-md-4">
                                                             <div class="form-group">
-                                                                <label for="product_order_tax">Tax (%)</label>
+                                                                <label for="product_order_tax">{{__('Tax')}} (%)</label>
                                                                 <input type="number" class="form-control"
                                                                     name="product_order_tax"
                                                                     value="{{ $product->product_order_tax }}"
@@ -118,22 +118,22 @@
                                                         </div>
                                                         <div class="col-md-4">
                                                             <div class="form-group">
-                                                                <label for="product_tax_type">Tax type</label>
+                                                                <label for="product_tax_type">{{__('Tax type')}}</label>
                                                                 <select class="form-control" name="product_tax_type"
                                                                     id="product_tax_type">
-                                                                    <option value="" selected>None</option>
+                                                                    <option value="" selected>{{__('None')}}</option>
                                                                     <option
                                                                         {{ $product->product_tax_type == 1 ? 'selected' : '' }}
-                                                                        value="1">Exclusive</option>
+                                                                        value="1">{{__('Exclusive')}}</option>
                                                                     <option
                                                                         {{ $product->product_tax_type == 2 ? 'selected' : '' }}
-                                                                        value="2">Inclusive</option>
+                                                                        value="2">{{__('Inclusive')}}</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-4">
                                                             <div class="form-group">
-                                                                <label for="product_unit">Unit <i
+                                                                <label for="product_unit">{{__('Unit')}} <i
                                                                         class="bi bi-question-circle-fill text-info"
                                                                         data-toggle="tooltip" data-placement="top"
                                                                         title="This text will be placed after Product Quantity."></i>
@@ -146,7 +146,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="barcode_symbology">Barcode Symbology <span
+                                                        <label for="barcode_symbology">{{__('Barcode Symbology')}} <span
                                                                 class="text-danger">*</span></label>
                                                         <select class="form-control" name="product_barcode_symbology"
                                                             id="barcode_symbology" required>
@@ -171,7 +171,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="product_note">Note</label>
+                                                        <label for="product_note">{{__('Note')}}</label>
                                                         <textarea name="product_note" id="product_note" rows="4 " class="form-control">{{ $product->product_note }}</textarea>
                                                     </div>
                                                 </div>
@@ -186,7 +186,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="image">Product Images <i
+                                    <label for="image">{{__('Product Images')}} <i
                                             class="bi bi-question-circle-fill text-info" data-toggle="tooltip"
                                             data-placement="top"
                                             title="Max Files: 3, Max File Size: 1MB, Image Size: 400x400"></i></label>
@@ -204,7 +204,7 @@
                 <div class="col-lg-12">
                     @include('utils.alerts')
                     <div class="form-group">
-                        <button class="btn btn-primary">{{__('Update')}}<i class="bi bi-check"></i></button>
+                        <button class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">{{__('Update')}}<i class="bi bi-check"></i></button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{__('Close')}}</button>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Sale\Http\Requests;
+namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Gate;
@@ -16,9 +16,7 @@ class UpdateSaleRequest extends FormRequest
     {
         return [
             'customer_id' => 'required|numeric',
-            'reference' => 'required|string|max:255',
-            'tax_percentage' => 'required|integer|min:0|max:100',
-            'discount_percentage' => 'required|integer|min:0|max:100',
+            'code' => 'required|string|max:255',
             'shipping_amount' => 'required|numeric',
             'total_amount' => 'required|numeric',
             'paid_amount' => 'required|numeric|max:' . $this->sale->total_amount,

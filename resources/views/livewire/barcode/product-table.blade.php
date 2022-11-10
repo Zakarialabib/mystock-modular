@@ -40,7 +40,7 @@
                 </table>
             </div>
             <div class="mt-3">
-                <button wire:click="generateBarcodes({{ $product }}, {{ $quantity }})" type="button" class="btn btn-primary">
+                <button wire:click="generateBarcodes({{ $product }}, {{ $quantity }})" type="button" class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">
                     <i class="bi bi-upc-scan"></i> Generate Barcodes
                 </button>
             </div>
@@ -57,7 +57,7 @@
 
     @if(!empty($barcodes))
         <div class="text-right mb-3">
-            <button wire:click="getPdf" wire:loading.attr="disabled" type="button" class="btn btn-primary">
+            <button wire:click="getPdf" wire:loading.attr="disabled" type="button" class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">
                 <span wire:loading wire:target="getPdf" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 <i wire:loading.remove wire:target="getPdf" class="bi bi-file-earmark-pdf"></i> Download PDF
             </button>

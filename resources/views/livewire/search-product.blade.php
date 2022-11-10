@@ -39,7 +39,7 @@
                         @endforeach
                         @if($search_results->count() >= $how_many)
                              <li class="list-group-item list-group-item-action text-center">
-                                 <a wire:click.prevent="loadMore" class="btn btn-primary btn-sm" href="#">
+                                 <a wire:click.prevent="loadMore" class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded btn-sm" href="#">
                                      Load More <i class="bi bi-arrow-down-circle"></i>
                                  </a>
                              </li>

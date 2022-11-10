@@ -19,7 +19,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <a href="{{ route('sales.create') }}" class="btn btn-primary">
+                        <a href="{{ route('sales.create') }}" class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">
                             Add Sale <i class="bi bi-plus"></i>
                         </a>
 

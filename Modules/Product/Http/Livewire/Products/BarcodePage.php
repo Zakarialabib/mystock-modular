@@ -21,7 +21,7 @@ class BarcodePage extends Component
     }
 
     public function render() {
-        return view('product::livewire.products.pbarcode');
+        return view('product::livewire.products.barcode');
     }
 
     public function productSelected(Product $product) {

@@ -19,7 +19,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <a href="{{ route('customers.create') }}" class="btn btn-primary">
+                        <a href="{{ route('customers.create') }}" class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">
                             Add Customer <i class="bi bi-plus"></i>
                         </a>
 

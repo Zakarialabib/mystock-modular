@@ -23,7 +23,7 @@
 
         <div class="row mt-4">
             <div class="col-md-12">
-                <livewire:barcode.product-table/>
+                <livewire:product::products.barcode-page />
             </div>
         </div>
     </div>

@@ -42,7 +42,7 @@
                                 <tr>
                                     <th>Product Name</th>
                                     <th>Code</th>
-                                    <th>Quantity</th>
+                                    <th>{{__('Quantity')}}</th>
                                     <th>Type</th>
                                 </tr>
 

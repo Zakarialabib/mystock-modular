@@ -44,7 +44,7 @@
                             <tr>
                                 <th class="align-middle">Product</th>
                                 <th class="align-middle">Net Unit Price</th>
-                                <th class="align-middle">Quantity</th>
+                                <th class="align-middle">{{__('Quantity')}}</th>
                                 <th class="align-middle">Discount</th>
                                 <th class="align-middle">Tax</th>
                                 <th class="align-middle">Sub Total</th>

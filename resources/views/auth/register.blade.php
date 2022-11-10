@@ -70,7 +70,7 @@
                             <input type="password" name="password_confirmation" class="form-control"
                                    placeholder="Confirm password">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block btn-flat mb-3">Register</button>
+                        <button type="submit" class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded btn-block btn-flat mb-3">Register</button>
                         <a href="{{ route('login') }}" class="text-center">I already have a membership.</a>
                     </form>
                 </div>
